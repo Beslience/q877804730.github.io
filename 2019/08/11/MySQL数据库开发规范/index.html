@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Markdown,">
+  <meta name="keywords" content="MySQL,开发,">
 
 
 
@@ -79,21 +79,18 @@
 
 
 
-<meta name="description" content="Markdown笔记 参考：https://www.appinn.com/markdown/basic.html 段落、标题、区块代码 标题  Setext，使用底线的形式 =（最高阶标题） -（第二阶标题）   Atx 插入1到6个’#’，对应标题1到6阶     区块代码  使用email形式的’&amp;gt;’角括号  877****@qq.com      修辞和强调 星号强调     * wo">
-<meta name="keywords" content="Markdown">
+<meta name="description" content="MySQL数据库开发规范 数据库命名规范 数据库对象名称小写并且使用下划线分割  临时库表以tmp_为前缀以日期为后缀，备份表以bak_为前缀以日期为后缀  数据库库表名称禁止使用MySQL保留的关键字，名称见名知意，不超过32个字符   数据库表基本设计规范 所有表必须使用Innodb存储引擎（支持事物控制、行级锁、有更好的恢复性，高并发下性能更好）  除无法满足列存储、存储空间数据等 MySQ">
+<meta name="keywords" content="MySQL,开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown Notes">
-<meta property="og:url" content="https://q877804730.github.io/2019/08/03/Markdown-Notes/index.html">
+<meta property="og:title" content="MySQL数据库开发规范">
+<meta property="og:url" content="https://q877804730.github.io/2019/08/11/MySQL数据库开发规范/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Markdown笔记 参考：https://www.appinn.com/markdown/basic.html 段落、标题、区块代码 标题  Setext，使用底线的形式 =（最高阶标题） -（第二阶标题）   Atx 插入1到6个’#’，对应标题1到6阶     区块代码  使用email形式的’&amp;gt;’角括号  877****@qq.com      修辞和强调 星号强调     * wo">
+<meta property="og:description" content="MySQL数据库开发规范 数据库命名规范 数据库对象名称小写并且使用下划线分割  临时库表以tmp_为前缀以日期为后缀，备份表以bak_为前缀以日期为后缀  数据库库表名称禁止使用MySQL保留的关键字，名称见名知意，不超过32个字符   数据库表基本设计规范 所有表必须使用Innodb存储引擎（支持事物控制、行级锁、有更好的恢复性，高并发下性能更好）  除无法满足列存储、存储空间数据等 MySQ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.baidu.com/img/bd_logo1.png?where=super">
-<meta property="og:image" content="https://www.baidu.com/img/bd_logo1.png?where=super">
-<meta property="og:updated_time" content="2019-08-03T16:54:13.914Z">
+<meta property="og:updated_time" content="2019-08-11T03:48:30.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown Notes">
-<meta name="twitter:description" content="Markdown笔记 参考：https://www.appinn.com/markdown/basic.html 段落、标题、区块代码 标题  Setext，使用底线的形式 =（最高阶标题） -（第二阶标题）   Atx 插入1到6个’#’，对应标题1到6阶     区块代码  使用email形式的’&amp;gt;’角括号  877****@qq.com      修辞和强调 星号强调     * wo">
-<meta name="twitter:image" content="https://www.baidu.com/img/bd_logo1.png?where=super">
+<meta name="twitter:title" content="MySQL数据库开发规范">
+<meta name="twitter:description" content="MySQL数据库开发规范 数据库命名规范 数据库对象名称小写并且使用下划线分割  临时库表以tmp_为前缀以日期为后缀，备份表以bak_为前缀以日期为后缀  数据库库表名称禁止使用MySQL保留的关键字，名称见名知意，不超过32个字符   数据库表基本设计规范 所有表必须使用Innodb存储引擎（支持事物控制、行级锁、有更好的恢复性，高并发下性能更好）  除无法满足列存储、存储空间数据等 MySQ">
 
 
 
@@ -123,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://q877804730.github.io/2019/08/03/Markdown-Notes/">
+  <link rel="canonical" href="https://q877804730.github.io/2019/08/11/MySQL数据库开发规范/">
 
 
 
 
 
-  <title>Markdown Notes | Hexo</title>
+  <title>MySQL数据库开发规范 | Hexo</title>
   
 
 
@@ -256,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://q877804730.github.io/2019/08/03/Markdown-Notes/">
+    <link itemprop="mainEntityOfPage" href="https://q877804730.github.io/2019/08/11/MySQL数据库开发规范/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zheng Jiayuan">
@@ -273,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown Notes</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL数据库开发规范</h1>
         
 
         <div class="post-meta">
@@ -285,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-03T11:35:18+08:00">
-                2019-08-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-11T11:43:39+08:00">
+                2019-08-11
               </time>
             
 
@@ -345,104 +342,165 @@
       
 
       
-        <p>Markdown笔记</p>
-<p>参考：<a href="https://www.appinn.com/markdown/basic.html" target="_blank" rel="noopener">https://www.appinn.com/markdown/basic.html</a></p>
-<h5 id="段落、标题、区块代码"><a href="#段落、标题、区块代码" class="headerlink" title="段落、标题、区块代码"></a>段落、标题、区块代码</h5><ul>
-<li><p>标题</p>
-<ul>
-<li>Setext，使用底线的形式<ul>
-<li>=（最高阶标题）</li>
-<li>-（第二阶标题）</li>
-</ul>
+        <p>MySQL数据库开发规范</p>
+<h3 id="数据库命名规范"><a href="#数据库命名规范" class="headerlink" title="数据库命名规范"></a>数据库命名规范</h3><ul>
+<li><p>数据库对象名称<strong>小写</strong>并且使用<strong>下划线分割</strong></p>
 </li>
-<li>Atx<ul>
-<li>插入1到6个’#’，对应标题1到6阶</li>
-</ul>
+<li><p>临时库表以<strong>tmp_</strong>为前缀以<strong>日期</strong>为后缀，备份表以<strong>bak_</strong>为前缀以<strong>日期</strong>为后缀</p>
+</li>
+<li><p>数据库库表名称禁止使用MySQL保留的关键字，名称见名知意，不超过32个字符</p>
 </li>
 </ul>
-</li>
-<li><p>区块代码</p>
+<h3 id="数据库表基本设计规范"><a href="#数据库表基本设计规范" class="headerlink" title="数据库表基本设计规范"></a>数据库表基本设计规范</h3><ul>
+<li><p>所有表必须使用Innodb存储引擎（支持<strong>事物</strong>控制、<strong>行级锁</strong>、有更好的恢复性，<strong>高并发</strong>下性能更好）</p>
 <ul>
-<li><p>使用email形式的’&gt;’角括号</p>
-<blockquote>
-<p>877****@qq.com</p>
-</blockquote>
-</li>
+<li>除无法满足列存储、存储空间数据等</li>
+<li>MySQL5.5之前默认使用MyIsam，5.6后默认使用Inoodb</li>
 </ul>
 </li>
-</ul>
-<h5 id="修辞和强调"><a href="#修辞和强调" class="headerlink" title="修辞和强调"></a>修辞和强调</h5><ul>
-<li><p>星号强调     * word *</p>
-<blockquote>
-<p><em>Hello World</em></p>
-</blockquote>
+<li><p>数据库和表使用统一的<strong>uft8mb4</strong>（避免由于字符集转换产生的乱码，<strong>转换</strong>会造成<strong>索引失效</strong>）</p>
 </li>
-<li><p>底线标记    _ word _</p>
-<blockquote>
-<p><em>Hello Word</em></p>
-</blockquote>
+<li><p>单表数据控制在<strong>500W</strong>行以内（过大会造成<strong>修改表结构、备份、恢复</strong>缓慢）</p>
 </li>
-</ul>
-<h5 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h5><p>无序列表使用星号、加号和减号来作为列表的项目标记</p>
+<li><p>表中做到<strong>冷热数据分离</strong>，减少表的宽度</p>
 <ul>
-<li>星号 * word</li>
+<li>表越宽，将表数据装载进内存需要<strong>消耗</strong>更多的<strong>内存</strong>、更多的<strong>磁盘IO</strong></li>
 </ul>
-<blockquote>
-<ul>
-<li>1</li>
-<li>2</li>
-</ul>
-</blockquote>
-<ul>
-<li>加号 + word</li>
-</ul>
-<blockquote>
-<ul>
-<li>1</li>
-<li>2</li>
-</ul>
-</blockquote>
-<ul>
-<li>减号 - word</li>
-</ul>
-<blockquote>
-<ul>
-<li>1</li>
-<li>2</li>
-</ul>
-</blockquote>
-<h5 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h5><ul>
-<li>行内  [name](address)</li>
-</ul>
-<blockquote>
-<p>This is an <a href="http://www.baidu.com" target="_blank" rel="noopener">exmaple link</a>.</p>
-</blockquote>
-<ul>
-<li>参考</li>
-</ul>
-<blockquote>
-<p>I get 10 times more traffic from <a href="http://www.baidu.com" target="_blank" rel="noopener">Google</a></p>
-<p>I get 10 times more traffic from [Google]<a href="http://www.baidu.com" target="_blank" rel="noopener">1</a></p>
-</blockquote>
-<h5 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h5><ul>
-<li>行内形式<br><img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="alt text" title="Hello World"></li>
-</ul>
-<blockquote>
-<p>![alt text](/path/to/img.jpg “Hello World”)</p>
-</blockquote>
-<ul>
-<li><p>参考形式</p>
-<p><img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="alt text" title="Hello World"></p>
+</li>
+<li><p>禁止在表中存储图片、文件大的二进制数据</p>
+</li>
+<li><p>禁止在线上对生产数据库进行压力测试</p>
+</li>
+<li><p>禁止从开发、测试环境连接生产环境数据库</p>
 </li>
 </ul>
+<h3 id="数据库表字段设计规范"><a href="#数据库表字段设计规范" class="headerlink" title="数据库表字段设计规范"></a>数据库表字段设计规范</h3><ul>
+<li><p>优先选择符合存储的最小数据类型</p>
+<ul>
+<li>字段越大，建立索引需要<strong>使用的空间</strong>越大，这样一页存储中的<strong>节点数据更少</strong>，需要<strong>IO读取更多次</strong>才能找到数据</li>
+<li>举例：对于非负数型的数据，要优先使用无符号整型进行存储<ul>
+<li>SIGNED INT -2147483648~2147483647</li>
+<li>UNSIGNED INT 0~4294967295</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>尽可能将所有列设置为<strong>NOT  NULL</strong></p>
+<ul>
+<li><strong>索引NULL</strong>列需要使用<strong>额外的空间保存</strong>，要占用更多的空间</li>
+<li>进行比较和计算需要NULL进行特别的处理</li>
+</ul>
+</li>
+<li><p>使用TIMESTAMP（4个字节）和DATETIME（8个字节）存储时间</p>
+<ul>
+<li>TIMESTAMP 存储的时间范围 1970-01-01 00:00:01 ~ 2038-01-19-03:14:07</li>
+<li>TIMESTAMP 占用4字节和INT相同，但比INT可读性高</li>
+<li>超过TIMESTAMP取值范围使用DATETIME类型进行存储</li>
+<li>不要使用字符串存储日期类型数据<ul>
+<li>无法使用日期函数进行计算和比较</li>
+<li>使用字符串需要占用更多的空间</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>同财务相关的<strong>金额</strong>类型数据需要<strong>demical</strong>类型</p>
+<ul>
+<li>demical为精准浮点数，在计算时不会丢失精度</li>
+</ul>
+</li>
+</ul>
+<h3 id="索引设计规范"><a href="#索引设计规范" class="headerlink" title="索引设计规范"></a>索引设计规范</h3><ul>
+<li>限制每张表上索引的数量，<strong>单张表不超过5个</strong><ul>
+<li>MySQL优化器在查询时，会对每一个索引进行评估，生成最好的执行计划，如何有很多个索引，会增加MySQL优化器生成执行计划的时间，降低查询性能</li>
+</ul>
+</li>
+<li>常见列索引建议<ul>
+<li>出现在SELECT、UPDATE、DELETE从句中WHERE从句中的列</li>
+<li>出现在ORDER BY、GROUP BY、DISTANCT中的列</li>
+<li>多表join的关联列</li>
+</ul>
+</li>
+<li>联合索引顺序<ul>
+<li>区分度最高的放在联合索引左侧</li>
+<li>字段长度小的列放在联合索引左侧</li>
+<li>使用频繁的列放在联合索引左侧</li>
+</ul>
+</li>
+<li>优先考虑使用<strong>覆盖索引</strong><ul>
+<li>覆盖索引：包含where、select、order by、group by字段的索引</li>
+</ul>
+</li>
+</ul>
+<h3 id="SQL开发规范"><a href="#SQL开发规范" class="headerlink" title="SQL开发规范"></a>SQL开发规范</h3><ul>
+<li><p>使用预编译语句进行数据库操作</p>
+<ul>
+<li>预编译语句可以重复这些计划，减少SQL编译使用的时间</li>
+<li>解决动态SQL带来的SQL注入问题</li>
+</ul>
+</li>
+<li><p>避免数据的类型的隐式转换</p>
+<ul>
+<li><p>隐式转换会导致索引失效： </p>
 <blockquote>
-<p>![alt text]<a href="https://www.baidu.com/img/bd_logo1.png?where=super" title="Hello World" target="_blank" rel="noopener">id</a></p>
+<p>select id from student where id = ‘111’;</p>
 </blockquote>
-<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>```</p>
-</blockquote>
+</li>
+</ul>
+</li>
+<li><p>充分利用表上已经存在的索引</p>
+<ul>
+<li>避免使用双’%’的查询条件：name like ‘%123%’（无前置%，只有后置%，可以使用列上的索引）</li>
+<li>一个SQL只能利用联合索引的一列进行范围查询<ul>
+<li>a,b,c列的联合索引，在查询条件中使用a列范围查询，在b,c列上的索引不会使用到</li>
+<li>在定义联合索引，如果需要使用a列进行范围查询，就将a列放在右侧</li>
+</ul>
+</li>
+<li>使用left join或not exist代替not in，因为not in不会使用索引</li>
+</ul>
+</li>
+<li><p>避免使用子查询</p>
+<ul>
+<li>子查询时会生成临时表，不会为临时表（内存/磁盘）生成索引，消耗更多的CPU和IO资源，产生慢查询</li>
+</ul>
+</li>
+<li><p>避免join关联太多的表，控制在5个以内</p>
+<ul>
+<li>MySQL存在关联缓存，同一个SQL关联一个表会分配一个关联缓存，当关联表越多时，会占用更多的内存，影响服务器性能</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库操作规范"><a href="#数据库操作规范" class="headerlink" title="数据库操作规范"></a>数据库操作规范</h3><ul>
+<li><p>超过100万行的批量操作（INSERT、UPDATE、DELETE）需要<strong>分批次</strong>进行</p>
+<ul>
+<li>主从环境时，会造成严重的操作延迟，大批量操作需要执行长时间，只有在主库执行完才会同步至从库</li>
+<li>Binlog日志为row时会产生大量的日志，日志会记录每一行数据的修改</li>
+<li>避免产生大事物操作：大批量修改数据，会在同一个事物中执行，会导致大批数据被锁定，导致大量的阻塞</li>
+<li>长时间的阻塞会占满其他连接，导致其他应用无法使用数据库</li>
+</ul>
+</li>
+<li><p>对于大表数据使用<strong>pt-online-schema-change</strong>修改表结构</p>
+<ul>
+<li>pt-online-schema-change会建立一个原表结构相同的新表，然后对新表的结构进行修改，再复制旧表中的数据到新表，复制完成后将新表名字修改为原表名字，将旧表删除</li>
+</ul>
+</li>
+<li><p>禁止一个应用使用的权限为super权限</p>
+<ul>
+<li>当连接达到最大时，需要剩一个连接留给DBA的super权限</li>
+</ul>
+</li>
+<li><p>一个数据库账号只能操作一个数据库，不进行有跨库drop的权限</p>
+</li>
+</ul>
+<h3 id="更多知识"><a href="#更多知识" class="headerlink" title="更多知识"></a>更多知识</h3><ul>
+<li><p>数据库二级索引</p>
+</li>
+<li><p>关联查询时数据库如何使用索引</p>
+</li>
+<li><p>text blob使用前缀索引</p>
+</li>
+<li><p>覆盖索引</p>
+</li>
+</ul>
 
       
     </div>
@@ -460,7 +518,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+            <a href="/tags/开发/" rel="tag"># 开发</a>
           
         </div>
       
@@ -473,14 +533,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/08/03/Markdown-Notes/" rel="next" title="Markdown Notes">
+                <i class="fa fa-chevron-left"></i> Markdown Notes
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/11/MySQL数据库开发规范/" rel="prev" title="MySQL数据库开发规范">
-                MySQL数据库开发规范 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/08/11/软件的C4模型/" rel="prev" title="软件的C4模型">
+                软件的C4模型 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -615,7 +679,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#段落、标题、区块代码"><span class="nav-number">1.</span> <span class="nav-text">段落、标题、区块代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修辞和强调"><span class="nav-number">2.</span> <span class="nav-text">修辞和强调</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#列表"><span class="nav-number">3.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#链接"><span class="nav-number">4.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片"><span class="nav-number">5.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码"><span class="nav-number">6.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库命名规范"><span class="nav-number">1.</span> <span class="nav-text">数据库命名规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库表基本设计规范"><span class="nav-number">2.</span> <span class="nav-text">数据库表基本设计规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库表字段设计规范"><span class="nav-number">3.</span> <span class="nav-text">数据库表字段设计规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引设计规范"><span class="nav-number">4.</span> <span class="nav-text">索引设计规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL开发规范"><span class="nav-number">5.</span> <span class="nav-text">SQL开发规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库操作规范"><span class="nav-number">6.</span> <span class="nav-text">数据库操作规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多知识"><span class="nav-number">7.</span> <span class="nav-text">更多知识</span></a></li></ol></div>
             
 
           </div>
